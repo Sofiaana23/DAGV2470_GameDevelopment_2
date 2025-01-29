@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 374147637369276933}
+  - component: {fileID: 7403857040405472115}
+  - component: {fileID: 3791825568512585889}
   m_Layer: 0
   m_Name: PoopCollectable
   m_TagString: Untagged
@@ -34,6 +36,45 @@ Transform:
   - {fileID: 330233784565311895}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7403857040405472115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3014910105156809695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9774ca9523cf1c346bde56b4ce9ff46e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3791825568512585889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3014910105156809695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11bc86fd793745744a02318722ca0b7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collectEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7403857040405472115}
+        m_TargetAssemblyTypeName: collectedAction, Assembly-CSharp
+        m_MethodName: destroyObject
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3121698929957870493
 GameObject:
   m_ObjectHideFlags: 0
