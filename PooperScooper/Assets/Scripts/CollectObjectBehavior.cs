@@ -6,8 +6,9 @@ public class CollectObjectBehavior : MonoBehaviour
 {
     public UnityEvent collectEvent;
 
-    private void OnTriggerEnter (Collider other) 
+    private void OnTriggerEnter(Collider other) 
     {     
+        Debug.Log("CollecteObject: OnTriggerEnter");
         CollectorBehavior collector = other.gameObject.GetComponent<CollectorBehavior>();
         if (collector != null)
         {

@@ -18,7 +18,7 @@ public class MovementController : MonoBehaviour
     void FixedUpdate()
     {
         Vector3 targetPosition = GetCursorPosition();
-        Debug.Log("Target Position: " + targetPosition);
+        //Debug.Log("Target Position: " + targetPosition);
         MoveTowardsTarget(targetPosition);
     }
 
@@ -33,7 +33,7 @@ public class MovementController : MonoBehaviour
             if (Physics.Raycast(ray, out RaycastHit hit))
             {
                 cursorPosition = hit.point;
-                Debug.Log("Touch Position: " + touch.position);
+                //Debug.Log("Touch Position: " + touch.position);
             }
         }
         else if (Input.mousePresent)
@@ -42,12 +42,12 @@ public class MovementController : MonoBehaviour
             if (Physics.Raycast(ray, out RaycastHit hit))
             {
                 cursorPosition = hit.point;
-                Debug.Log("Mouse Position: " + Input.mousePosition);
+                //Debug.Log("Mouse Position: " + Input.mousePosition);
             }
         }
 
         cursorPosition.y = fixedY; // Ensure the target position is on the same y plane as the game object
-        Debug.Log("Cursor World Position: " + cursorPosition);
+        //Debug.Log("Cursor World Position: " + cursorPosition);
         return cursorPosition;
     }
 
@@ -62,8 +62,8 @@ public class MovementController : MonoBehaviour
         newPosition.z = Mathf.Clamp(newPosition.z, minZ, maxZ);
         newPosition.y = fixedY; // Ensure the new position is on the same y plane as the game object
 
-        Debug.Log("Current Position: " + currentPosition);
-        Debug.Log("New Position: " + newPosition);
+        //Debug.Log("Current Position: " + currentPosition);
+        //Debug.Log("New Position: " + newPosition);
 
         transform.position = newPosition;
     }
