@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &931243069122526470
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4099329398903792100}
+  - component: {fileID: 978345785990225551}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4099329398903792100
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931243069122526470}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.38881302, y: -0.78428787, z: -2.667366}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &978345785990225551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931243069122526470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3ecfb082a449164c9f6cc2d096f4a1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnableObjects:
+  - gameObject: {fileID: 3014910105156809695, guid: 137c2448338a405408c8db9e8d64a3b2, type: 3}
+    value: 0.05
+  - gameObject: {fileID: 9173750690402455373, guid: 134c96ff51198e4cea360c89aaab1411, type: 3}
+    value: 1
+  - gameObject: {fileID: 9173750690402455373, guid: 134c96ff51198e4cea360c89aaab1411, type: 3}
+    value: 1
+  - gameObject: {fileID: 9173750690402455373, guid: 134c96ff51198e4cea360c89aaab1411, type: 3}
+    value: 1
+  - gameObject: {fileID: 8342448983144309027, guid: fcab16f0d26cd82dab4e96bf1ef5ecc5, type: 3}
+    value: 1
+  - gameObject: {fileID: 7162602615161990867, guid: 520381c93e2f9734bab9f23f83618de2, type: 3}
+    value: 0.01
+  - gameObject: {fileID: 2602975220198116835, guid: 10038933d2c22814dbaff12551a38547, type: 3}
+    value: 0.01
+  - gameObject: {fileID: 8280039493998787043, guid: 9269ea0b3480d424ea90072161e59db8, type: 3}
+    value: 0.01
+  - gameObject: {fileID: 11222734055420341, guid: 8497b5119f1773542bd6aeecf9006d64, type: 3}
+    value: 0.05
+  - gameObject: {fileID: 6856978537240793073, guid: 2a4e14a11ca3c4d489d5ba0540f0189c, type: 3}
+    value: 0.05
+  - gameObject: {fileID: 6540069939353379996, guid: c20e0ca3811f1d048a258dc80bc9ebe5, type: 3}
+    value: 0.05
+  - gameObject: {fileID: 5412459310204636140, guid: c9dc864ada149e44f9aba3e14e25a490, type: 3}
+    value: 0.05
+  - gameObject: {fileID: 4855478995152177363, guid: 0c4bfe13945ff1e4a8d4f7217a99246f, type: 3}
+    value: 0.05
+  - gameObject: {fileID: 4521090229625430784, guid: 874e3a4a755ef9e639594d1f5df968d1, type: 3}
+    value: 0.01
